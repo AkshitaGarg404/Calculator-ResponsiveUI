@@ -1,0 +1,120 @@
+/* Reset default browser styles */
+* {
+    border: 0;
+    margin: 0;
+}
+
+/* Set base font size and full height/width */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+/* Top bar styling */
+#top {
+    background-color: rgb(127, 190, 246);
+    display: flex;
+    justify-content: center;
+}
+
+/* Title styling */
+h1 {
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+/* Center the calculator vertically */
+.center {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+}
+
+/* Calculator container */
+#calci {
+    background-color: black;
+    margin-top: 3%;
+    height: 610px;
+    width: 70%;
+    border-radius: 3%;
+    box-shadow: 10px 10px 20px rgb(75, 69, 69);
+    padding: 2%;
+}
+
+/* Display screen styling */
+#screen {
+    margin: auto;
+    background-color: rgb(210, 208, 208);
+    height: 18%;
+    width: 90%;
+    border-radius: 7%;
+    box-shadow: inset 2px 2px 20px gray;
+    font-size: 500%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4%;
+}
+
+/* Button grid container */
+.buttons {
+    height: 100%;
+    width: 90%;
+    margin: 10% auto;
+}
+
+/* General button styles */
+.redbutton, .whitebutton, .yellowbutton, .greenbutton, .bluebutton {
+    height: 70px;
+    width: 70px;
+    font-size: 200%;
+    margin: 2%;
+    padding: 3%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* Individual button colors */
+.redbutton {
+    background-color: rgb(249, 53, 53);
+    color: white;
+}
+
+.yellowbutton {
+    background-color: rgb(220, 214, 30);
+    color: white;
+}
+
+.greenbutton {
+    background-color: #28b328;
+    color: darkgreen;
+}
+
+.bluebutton {
+    background-color: rgb(72, 115, 225);
+}
+
+
+@media(min-width: 430px){
+    #calci{
+        width:400px
+    }
+}
+
+
+@media(max-width: 430px){
+    #calci{
+        width:100%;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .redbutton, .whitebutton, .yellowbutton, .greenbutton, .bluebutton {
+        height: 10vh;
+        width: 15vw;
+    }   
+   
+}
+
+
